@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "54ca0dd0-70a2-414b-947a-9e4ff4fe3ec8",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ApiUrl}}products",
+					"host": [
+						"{{ApiUrl}}products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ApiUrl}}products/8f2e9176-35ee-4f0a-ae55-83023d2db1a3",
+					"host": [
+						"{{ApiUrl}}products"
+					],
+					"path": [
+						"8f2e9176-35ee-4f0a-ae55-83023d2db1a3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{ApiUrl}}products/d3f1c1f1-c462-4b83-96cb-7542a437aa06",
+					"host": [
+						"{{ApiUrl}}products"
+					],
+					"path": [
+						"d3f1c1f1-c462-4b83-96cb-7542a437aa06"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product By Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ApiUrl}}products?name=apple",
+					"host": [
+						"{{ApiUrl}}products"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "apple"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Samsung Galaxy S9\",\r\n    \"description\": \"Newest mobile product from Samsung.\",\r\n    \"price\": 1524.99,\r\n    \"deliveryPrice\": 26.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}products",
+					"host": [
+						"{{ApiUrl}}products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Apple iPhone 7S\",\n    \"description\": \"Newest mobile product from Apple Inc.\",\n    \"price\": 1300.01,\n    \"deliveryPrice\": 16.01\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}products/de1287c0-4b15-4a7b-9d8a-dd21b3cafec3",
+					"host": [
+						"{{ApiUrl}}products"
+					],
+					"path": [
+						"de1287c0-4b15-4a7b-9d8a-dd21b3cafec3"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

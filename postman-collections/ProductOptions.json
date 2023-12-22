@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "1d06d42d-082c-4a55-98d3-55efddcd40b3",
+		"name": "ProductOptions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Product Options",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ApiUrl}}products/8f2e9176-35ee-4f0a-ae55-83023d2db1a3/options",
+					"host": [
+						"{{ApiUrl}}products"
+					],
+					"path": [
+						"8f2e9176-35ee-4f0a-ae55-83023d2db1a3",
+						"options"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product Option",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{ApiUrl}}products/72e47434-0cf5-49ac-89b1-81f330825d42/options/ef7a79d1-a0ca-4513-9e54-4ba1152fbd72",
+					"host": [
+						"{{ApiUrl}}products"
+					],
+					"path": [
+						"72e47434-0cf5-49ac-89b1-81f330825d42",
+						"options",
+						"ef7a79d1-a0ca-4513-9e54-4ba1152fbd72"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product Option By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ApiUrl}}products/8f2e9176-35ee-4f0a-ae55-83023d2db1a3/options/0643ccf0-ab00-4862-b3c5-40e2731abcc9",
+					"host": [
+						"{{ApiUrl}}products"
+					],
+					"path": [
+						"8f2e9176-35ee-4f0a-ae55-83023d2db1a3",
+						"options",
+						"0643ccf0-ab00-4862-b3c5-40e2731abcc9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product Option",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Option 1\",\r\n    \"description\": \"Option 1 description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}products/d3f1c1f1-c462-4b83-96cb-7542a437aa06/options/",
+					"host": [
+						"{{ApiUrl}}products"
+					],
+					"path": [
+						"d3f1c1f1-c462-4b83-96cb-7542a437aa06",
+						"options",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product Option",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Option 2\",\n    \"description\": \"Option 2 description\",\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ApiUrl}}products/de1287c0-4b15-4a7b-9d8a-dd21b3cafec3/options/072a438a-4365-4c16-8e92-04c665506aeb",
+					"host": [
+						"{{ApiUrl}}products"
+					],
+					"path": [
+						"de1287c0-4b15-4a7b-9d8a-dd21b3cafec3",
+						"options",
+						"072a438a-4365-4c16-8e92-04c665506aeb"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
